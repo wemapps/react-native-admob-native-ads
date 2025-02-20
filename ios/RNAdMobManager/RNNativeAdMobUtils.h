@@ -4,4 +4,4 @@
 #define MEDIATION_FACEBOOK
 #endif
 
-NSArray *__nullable RNAdMobProcessTestDevices(NSArray *__nullable testDevices, id _Nonnull simulatorId);
+NSArray *__nullable RNAdMobProcessTestDevices(NSArray *__nullable testDevices);

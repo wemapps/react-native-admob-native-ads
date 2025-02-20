@@ -1,6 +1,6 @@
 #import "RNNativeAdMobUtils.h"
 
-NSArray *__nullable RNAdMobProcessTestDevices(NSArray *__nullable testDevices, id _Nonnull simulatorId)
+NSArray *__nullable RNAdMobProcessTestDevices(NSArray *__nullable testDevices)
 {
     if (testDevices == NULL) {
         return testDevices;
@@ -11,6 +11,5 @@ NSArray *__nullable RNAdMobProcessTestDevices(NSArray *__nullable testDevices, i
     }
     NSMutableArray *values = [testDevices mutableCopy];
     [values removeObjectAtIndex:index];
-    [values addObject:simulatorId];
     return values;
 }
