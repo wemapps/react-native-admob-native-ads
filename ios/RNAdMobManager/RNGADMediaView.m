@@ -23,7 +23,7 @@ GADVideoController *vc;
 - (void)setMuted:(BOOL *)muted {
     
     if (self.mediaContent != nil && vc != nil) {
-        [vc setMute:muted? YES : NO];
+        vc.muted = muted ? YES : NO;
     }
 }
 
